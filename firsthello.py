@@ -1,1 +1,5 @@
-print('hello clone test')
+print('first clone bye')
+print('first clone bye')
+print('first clone bye')
+print('first clone bye')
+print('first clone bye')
