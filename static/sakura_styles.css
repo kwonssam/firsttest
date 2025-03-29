@@ -1,0 +1,105 @@
+/* 기본 초기화 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #fff5f7, #ffeef1); /* 연한 벚꽃 그라데이션 */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* 메인 컨테이너 */
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 24px;
+  box-shadow: 0 12px 24px rgba(200, 150, 150, 0.2);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  border: 1px solid #ffd3dc;
+}
+
+/* 제목 */
+.container h1 {
+  color: #d36c85;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* 입력 폼 */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #b25c6c;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #f5c2cd;
+  border-radius: 12px;
+  background-color: #fff8f9;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #e88b9c;
+  box-shadow: 0 0 5px rgba(233, 122, 140, 0.3);
+}
+
+/* 버튼 */
+button[type="submit"] {
+  background-color: #f18ca7;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #e0758f;
+}
+
+/* 결과 박스 */
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff0f4;
+  border: 1px solid #f6c1ce;
+  border-radius: 16px;
+  text-align: left;
+}
+
+#result h2 {
+  color: #d36c85;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#result p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.hidden {
+  display: none;
+}
